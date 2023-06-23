@@ -10,14 +10,9 @@ import br.com.treinaweb.zoologico.classes.Zoologico;
 public class Programa {
 
 	public static void main(String[] args) {
-		Animal animal = new Cachorro("Totó", 2);
-		System.out.println("Olá, seu animal é " + animal.getEspecie() + ", o nome do " +
-				"animal é " + animal.getNome() + " e ele tem " + animal.getIdade() + " anos.");
-		if (animal.ehAdulto()){
-			System.out.println("Cachorro adulto");
-		} else {
-			System.out.println("Cachorro não é adulto");
-		}
+		Animal animal = new Cachorro("Totï¿½", 2);
+		
+		
 		System.out.println("==========");
 		System.out.println("Barulho do cachorro: ");
 		animal.emitirBarulho();
@@ -25,18 +20,20 @@ public class Programa {
 		Zoologico zoo = new Zoologico();
 		zoo.setNome("Zoo TreinaWeb");
 		zoo.adicionarAnimal(animal);
-		Animal animal2 = new Gato("Zé", 3);
+		Animal animal2 = new Gato("Zï¿½", 3);
 		zoo.adicionarAnimal(animal2);
-		System.out.println("Animais do zoológico " + zoo.getNome());
+		System.out.println("Animais do zoolï¿½gico " + zoo.getNome());
 		zoo.listarAnimais();
 		zoo.removerAnimal(0);
-		System.out.println("Depois da remoção: ");
+		System.out.println("Depois da remoï¿½ï¿½o: ");
 		zoo.listarAnimais();
 		
 		Veterinario vet = new Veterinario();
 		vet.setNome("TreinaWeb");
 		vet.atenderAnimal(animal);
 		vet.listarAnimaisAtendidos();
+		Animal a=new Cachorro("Perro", 0);
+		a.emitirBarulho();
 	}
 
 }

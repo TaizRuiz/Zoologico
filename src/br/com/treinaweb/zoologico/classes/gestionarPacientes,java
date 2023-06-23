@@ -1,0 +1,16 @@
+public class gestionarPacientes{
+    public static void atenderAnimal(Animal animalASerAtendido, List<Animal> animais){
+		animais.add(animalASerAtendido);
+	}
+	
+	public static void deixarDeAtenderAnimal(int indiceAnimal,List<Animal> animais){
+		animais.remove(indiceAnimal);		
+	}
+	
+	public static  void listarAnimaisAtendidos(List<Animal> animais){
+		System.out.println("Animais atendidos");
+		for (int i = 0; i < animais.size(); i++){
+			System.out.println("    - " + animais.get(i).getNome());
+		}
+	}
+}

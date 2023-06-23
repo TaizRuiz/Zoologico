@@ -50,15 +50,6 @@ public abstract class Animal implements Animavel{
 	@Override
 	public abstract void emitirBarulho();
 	
-	@Override
-	public Boolean ehAdulto(){
-		if (estaVivo){
-			return idade >= 1;
-		} else {
-			return false;
-		}
-	}
-	
 	
 	@Override
 	public final void morrer(){

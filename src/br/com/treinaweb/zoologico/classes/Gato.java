@@ -1,7 +1,15 @@
 package br.com.treinaweb.zoologico.classes;
 
-public class Gato extends Animal {
+public class Gato extends Animal implements adultoI{
 
+@Override
+	public boolean esAdulto(){
+		if (estaVivo){
+			return idade >= 1;
+		} else {
+			return false;
+		}
+	}
 	public Gato(String nome) {
 		super(nome);
 	}

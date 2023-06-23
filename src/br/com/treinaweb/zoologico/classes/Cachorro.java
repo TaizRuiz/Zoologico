@@ -1,6 +1,14 @@
 package br.com.treinaweb.zoologico.classes;
 
-public class Cachorro extends Animal {
+public class Cachorro extends Animal implements adultoI {
+	@Override
+	public boolean esAdulto(){
+		if (estaVivo){
+			return idade >= 2;
+		} else {
+			return false;
+		}
+	}
 
 	public Cachorro(String nome) {
 		super(nome);
@@ -24,12 +32,5 @@ public class Cachorro extends Animal {
 		}
 	}
 	
-	@Override
-	public Boolean ehAdulto(){
-		if (estaVivo){
-			return idade >= 2;
-		} else {
-			return false;
-		}
-	}
+
 }

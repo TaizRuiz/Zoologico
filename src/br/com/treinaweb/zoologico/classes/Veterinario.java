@@ -20,19 +20,6 @@ public class Veterinario {
 		animais = new ArrayList<Animal>();
 	}
 	
-	public void atenderAnimal(Animal animalASerAtendido){
-		animais.add(animalASerAtendido);
-	}
 	
-	public void deixarDeAtenderAnimal(int indiceAnimal){
-		animais.remove(indiceAnimal);		
-	}
-	
-	public void listarAnimaisAtendidos(){
-		System.out.println("Animais atendidos");
-		for (int i = 0; i < animais.size(); i++){
-			System.out.println("    - " + animais.get(i).getNome());
-		}
-	}
 	
 }
